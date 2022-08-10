@@ -1,0 +1,177 @@
+*{
+    
+
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --first-color: #0d6efd;
+    --second-color: #dc3545;
+    --third-color:white;
+    --fourth-color:orange;
+}
+body{
+    background: linear-gradient(to left,var(--first-color),var(--second-color));
+    overflow-x: hidden;
+    position: relative;
+
+}
+/* nav */
+nav{
+    background: linear-gradient(to left,var(--first-color),var(--second-color));
+}
+/* header */
+.header{
+    min-height: 500px;
+    width: 100%;
+    position: relative;
+}
+.header video{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index:-2;
+}
+.header .overlay{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    background: linear-gradient(to left,var(--first-color),var(--second-color));
+    mix-blend-mode: overlay;
+    z-index: -1;
+
+}
+/* about us */
+.main-heading{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--third-color);
+}
+.sub-heading{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--fourth-color);
+}
+.line{
+    width: 100px;
+    height: 2px;
+    border: 2px solid var(--fourth-color);
+    margin: auto;
+}
+
+/* Service */
+.container .row .col-lg-5>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.container .row .col-lg-7 .card .row .col-lg-5>img:hover{
+    transform: scale(1.05);
+}   
+.container .row .col-lg-7 .card{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+/* Membership */
+.col-md-6>.card{
+    background-color:black;
+    color:white;
+    text-align: center;
+}
+.col-md-6 .card .card-header >.recom{
+    background-color: white;
+    color: black;
+    width: 150px;
+    position: absolute;
+    top:20px;
+    right: -30px;
+    
+    transform: rotate(30deg);
+    font-size: 0.7rem;
+}
+.col-md-6 .recom{
+    position: relative;
+}
+/* testimonail */
+#testimonial img{
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    object-position: 100% 10%;
+    
+}
+.carousel-control-prev{
+     
+    left: -8%;
+}
+.carousel-control-next{
+    right: -8%;
+}
+.carousel-control-prev-icon{
+    background-color: var(--fourth-color);
+}
+.carousel-control-next-icon{
+    background-color: var(--fourth-color);
+}
+.carousel-indicators button[type="button"]{
+    width: 30px;
+    height: 10px;
+}
+/* Recent blog */
+#recentblog img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+#recentblog img:hover{
+    transform: scale(1.04);
+}
+/* FAQ */
+.accordion-button:not(.collapsed){
+    background-color: var(--fourth-color);
+    color: white;
+}
+/* contant */
+#contant{
+    background-image:url(contant.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+/* footer */
+.footer{
+    font-size: 1rem;
+    text-align: center;
+    
+}
+
+#upbtn{
+    width: 50px;
+    font-size: 1rem;
+    text-align: center;     
+    position: fixed;
+    color: white;
+    bottom: 10px;
+    right: 50px;
+    border: none;
+   
+   
+}
